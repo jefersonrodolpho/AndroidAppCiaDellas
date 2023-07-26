@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mulher_gordo_e_magro_removebg_preview"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="220dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="170dp"
+            android:hapticFeedbackEnabled="false"
+            android:text="Cálculo IMC"
+            android:textAlignment="center"
+            android:textColor="#E4673AB7"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView_peso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peso em Kg"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_peso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:background="#948876AA"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_altura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Altura"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_altura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:background="#948876AA"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="CALCULAR"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_resultadoIMC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:textColor="#1F0253"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:foreground="@drawable/logo_removebg_preview"
+            app:srcCompat="@drawable/logo_removebg_preview" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

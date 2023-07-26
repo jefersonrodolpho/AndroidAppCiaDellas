@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cia Dellas calculadora IMC</string>
+    <string name="hello_world">Hello World</string>
+    <string name="button">Button</string>
+</resources>
